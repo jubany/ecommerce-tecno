@@ -1,7 +1,7 @@
 import { useSession, signIn, signOut } from "next-auth/react"
-import Nav from "@/components/Nav";
 import {useState} from "react";
 import Logo from "@/components/Logo";
+import Nav from "./Navbar";
 
 export default function Layout({children}) {
   const [showNav,setShowNav] = useState(false);
